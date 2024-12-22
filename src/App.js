@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Web3 from "web3";
 
 const App = () => {
+  // 사용자의 MetaMask 계정 주소
   const [account, setAccount] = useState(null);
+  // 현재 MetaMask에서 연결된 블록체인의 네트워크 ID
   const [network, setNetwork] = useState(null);
+  // 현재 연결된 계정의 이더리움 잔액
   const [balance, setBalance] = useState(null);
 
   // MetaMask 지갑 연결
